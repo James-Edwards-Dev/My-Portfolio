@@ -1,8 +1,8 @@
 :root{
-    --primary-bg-color: #16131e;
-    --primary-color: #fff;
+    --primary-color: #16131e;
+    --light-primary-color: #3f3654;
     --secondary-color: #dd1f42;
-    --highlight-color: #00e1ff;
+    --text-color: #fff;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: var(--primary-bg-color);
+    background: var(--primary-color);
     padding: 1.5rem;
     width: calc(100vw - 4rem);
 }
@@ -23,7 +23,7 @@ section{
     max-width: 1100px;
 }
 p, a{
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 1.1rem;
     margin: 0 0 1rem;
     text-decoration: none;
@@ -75,8 +75,8 @@ h6 {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.6rem;
-    background-color: var(--secondary-color);
-    border: 2px solid var(--primary-color);
+    background-color: var(--light-primary-color);
+    border: 2px solid var(--text-color);
     border-radius: 1.25rem;
     margin: 0;
     transition: transform 200ms, background-color 400ms;
@@ -88,8 +88,31 @@ h6 {
 }
 
 .button:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--secondary-color);
     transform: scale(1.05);
+}
+
+.divider {
+    height: 17.5rem;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px dashed var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        padding: 0 2rem 0.4rem;
+        font-size: 4rem;
+        border-top: 2px solid var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+}
+
+.multisection {
+    section:not(:last-child) {
+        padding-bottom: 2.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px dotted var(--secondary-color);
+    }
 }
 
 .project-intro{
@@ -103,7 +126,7 @@ h6 {
     > img {
         max-width: min(30%, 250px);
         border-radius: 25%;
-        border: 2px solid var(--primary-color);
+        border: 2px solid var(--text-color);
     }
     > div {
         height: 100%;
@@ -132,7 +155,7 @@ h6 {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        border: 2px solid var(--primary-color);
+        border: 2px solid var(--text-color);
     }
 
     p{
