@@ -1,7 +1,8 @@
 :root{
     --primary-bg-color: #16131e;
-    --primary-color: #f3f3f3;
+    --primary-color: #fff;
     --secondary-color: #dd1f42;
+    --highlight-color: #00e1ff;
 }
 
 html {
@@ -21,10 +22,11 @@ section{
     width: calc(100% - 4rem);
     max-width: 1100px;
 }
-p {
+p, a{
     color: var(--primary-color);
     font-size: 1.1rem;
     margin: 0 0 1rem;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,10 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     font-size: 2.25rem;
     width: fit-content;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 0;
 }
 h4 {
     font-size: 1.7rem;
+    margin-top: 0;
 }
 h5 {
     font-size: 1.5rem;
@@ -49,13 +52,73 @@ h6 {
     font-size: 1.3rem;
 }
 
+.description {
+    font-size: 1rem;
+    font-family: "Winky Sans", sans-serif;
+    font-style: italic;
+    width: fit-content;
+    margin: auto auto 1rem;
+}
+
 .txt_highlight {
     color: var(--secondary-color);
 }
 
+.icon {
+    aspect-ratio: 1 / 1;
+    width: 2.5rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 1.25rem;
+    margin: 0;
+    transition: transform 200ms, background-color 400ms;
+    font-size: 1rem;
+}
+
+.git {
+    background-color: black;
+}
+
+.button:hover {
+    background-color: var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.project-intro{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    p {
+        max-width: 700px;
+    }
+    > img {
+        max-width: min(30%, 250px);
+        border-radius: 25%;
+        border: 2px solid var(--primary-color);
+    }
+    > div {
+        height: 100%;
+    }
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
 #Aced_Class_Table{
     border-top: 1px solid var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
+    /*border-bottom: 1px solid var(--secondary-color);*/
     
     column-gap: 3vw;
     width: 100%;
