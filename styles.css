@@ -190,5 +190,6 @@ h6 {
     .logo {
         border: solid 10px black;
         max-width: calc(min(25vw, 300px) - 20px);
+        margin: auto 0;
     }
 }
