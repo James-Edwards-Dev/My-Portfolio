@@ -1,0 +1,11 @@
+html {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#Aced_Class_Table{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+}
