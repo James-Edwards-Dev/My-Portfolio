@@ -3,6 +3,7 @@
     --light-primary-color: #3f3654;
     --secondary-color: #dd1f42;
     --text-color: #fff;
+    --highlight-color: #23dcf3;
 }
 
 html {
@@ -26,7 +27,10 @@ p, a{
     color: var(--text-color);
     font-size: 1.1rem;
     margin: 0 0 1rem;
-    text-decoration: none;
+}
+a:hover{
+    color: var(--highlight-color);
+    transition: color 100ms;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +76,7 @@ h6 {
 
 .button {
     font-family: "Consolas", "Inter", sans-serif;
+    text-decoration: none;
     width: fit-content;
     height: fit-content;
     display: inline-flex;
@@ -93,6 +98,7 @@ h6 {
 .button:hover {
     background-color: var(--secondary-color);
     transform: scale(1.05);
+    color: var(--text-color);
 }
 
 .divider {
@@ -171,7 +177,7 @@ h6 {
     }
 }
 
-.education-intro {
+.university {
     display: grid;
     gap: 1rem;
     grid-template-columns: min(25vw, 300px) 1fr;
