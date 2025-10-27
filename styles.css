@@ -50,6 +50,7 @@ h5 {
 
 h6 {
     font-size: 1.3rem;
+    color: var(--text-color);
 }
 
 .description {
@@ -71,6 +72,8 @@ h6 {
 
 .button {
     font-family: "Consolas", "Inter", sans-serif;
+    width: fit-content;
+    height: fit-content;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -107,8 +110,13 @@ h6 {
     }
 }
 
-.multisection section:not(:last-child) {
-    margin-bottom: 5rem;
+.multisection {
+    section:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+    section:last-child {
+        margin-bottom: 2rem;
+    }
 }
 
 .project-intro{
@@ -156,4 +164,25 @@ h6 {
     p{
         margin: 1rem 0;
     };
+}
+.university {
+    h3 {
+        margin: 0.5rem 0 -0.75rem;
+    }
+}
+
+.education-intro {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: min(25vw, 300px) 1fr;
+    h3 {
+        grid-column: span 2;
+    }
+    img {
+        max-width: min(25vw, 300px);
+    }
+    .logo {
+        border: solid 10px black;
+        max-width: calc(min(25vw, 300px) - 20px);
+    }
 }
