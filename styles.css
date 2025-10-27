@@ -116,6 +116,10 @@ h6 {
     }
 }
 
+.small {
+    height: 12.5rem;
+}
+
 .multisection {
     section:not(:last-child) {
         margin-bottom: 5rem;
@@ -175,6 +179,7 @@ h6 {
     h3 {
         margin: 0.5rem 0 -0.75rem;
     }
+    margin-bottom: 1.5rem;
 }
 
 .university {
@@ -193,3 +198,34 @@ h6 {
         margin: auto 0;
     }
 }
+
+#certifications{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    img {
+        max-width: min(20vw, 250px);
+    }
+    > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 100ms;
+    }
+    a:hover {
+        transform: scale(1.05);
+    }
+    h4 {
+        color: var(--text-color);
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        margin-bottom: 0.125rem;
+        margin-top: 0.75rem;
+    }
+    p {
+        margin-top: 0.25rem;
+    }
+}
+
