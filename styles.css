@@ -107,17 +107,13 @@ h6 {
     }
 }
 
-.multisection {
-    section:not(:last-child) {
-        padding-bottom: 2.5rem;
-        margin-bottom: 2rem;
-        border-bottom: 2px dotted var(--secondary-color);
-    }
+.multisection section:not(:last-child) {
+    margin-bottom: 5rem;
 }
 
 .project-intro{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 2rem;
     /*p {*/
@@ -143,7 +139,6 @@ h6 {
 #Aced_Class_Table{
     border-top: 1px solid var(--secondary-color);
     /*border-bottom: 1px solid var(--secondary-color);*/
-    
     column-gap: 3vw;
     width: 100%;
 
