@@ -1,6 +1,7 @@
 :root{
     --primary-color: #16131e;
     --light-primary-color: #3f3654;
+    --dark-primary-color: #09070e;
     --secondary-color: #dd1f42;
     --text-color: #fff;
     --highlight-color: #23dcf3;
@@ -13,8 +14,18 @@ html {
 
 body {
     background: var(--primary-color);
-    padding: 1.5rem;
-    width: calc(100vw - 4rem);
+    margin: 0;
+
+    > section:last-of-type {
+        border-bottom: 2px dashed var(--secondary-color);
+        margin-bottom: 4rem;
+    }
+}
+
+footer {
+    background: var(--dark-primary-color);
+    border-top: 2px solid var(--secondary-color);
+    min-height: 40vh;
 }
 
 section{
@@ -220,9 +231,7 @@ h6 {
     h4 {
         color: var(--text-color);
         font-family: 'Inter', sans-serif;
-        margin: 0;
-        margin-bottom: 0.125rem;
-        margin-top: 0.75rem;
+        margin: 0.75rem 0 0.125rem;
     }
     p {
         margin-top: 0.25rem;
