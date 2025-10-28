@@ -224,6 +224,8 @@ h6 {
         align-items: center;
         text-decoration: none;
         transition: transform 100ms;
+        max-width: min(20vw, 250px);
+        text-align: center;
     }
     a:hover {
         transform: scale(1.05);
