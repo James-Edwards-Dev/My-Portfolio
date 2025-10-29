@@ -107,10 +107,27 @@ li::marker {
     background-color: black;
 }
 
+.stylized {
+    background-color: var(--secondary-color);
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    border-color: var(--dark-primary-color);
+    color: var(--dark-primary-color);
+    transition: transform 200ms, background-color 800ms;
+    margin: auto;
+}
+
 .button:hover {
     background-color: var(--secondary-color);
     transform: scale(1.05);
     color: var(--text-color);
+}
+
+.stylized:hover {
+    background-color: var(--dark-primary-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 footer {
@@ -119,19 +136,29 @@ footer {
     padding-top: 2rem;
     padding-bottom: 4rem;
 
-    > section{
+    .bullets{
         display: flex;
         flex-wrap: wrap;
         column-gap: 3rem;
         row-gap: 1rem;
-
-        img {
-            max-width: 7.5rem;
-        }
         
-        > div {
+        div {
             flex-basis: max-content;
         }
+
+        .Credits{
+            flex-basis: min(300px, 100%);
+            max-width: 650px;
+            flex-grow: 1;
+        }
+    }
+    
+    .CV-link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px dashed var(--secondary-color);
     }
 
     p, a, li {
@@ -153,12 +180,6 @@ footer {
     strong {
         font-size: 1.2rem;
         font-weight: 700;
-    }
-    
-    .Credits{
-        flex-basis: min(300px, 100%);
-        max-width: 650px;
-        flex-grow: 1;
     }
 }
 
