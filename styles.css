@@ -4,7 +4,8 @@
     --dark-primary-color: #09070e;
     --secondary-color: #dd1f42;
     --text-color: #fff;
-    --highlight-color: #23dcf3;
+    --highlight-color: var(--secondary-color);
+            /*#23dcf3;*/
 }
 
 html {
@@ -35,7 +36,7 @@ p, a, li{
 }
 a:hover{
     color: var(--highlight-color);
-    transition: color 100ms;
+    transition: color 100ms, border-bottom-color 100ms;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,6 +130,64 @@ li::marker {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
 }
+
+header {
+    position: sticky;
+    top: 0;
+    
+    min-width: 100vw;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    
+    background-color: var(--dark-primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+
+    > section {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        font-weight: 400;
+        margin: 0;
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        > a, > div > a {
+            border-bottom: 1px solid var(--secondary-color);
+            padding: 0.5rem 0.75rem 0.25rem;
+            border-radius: 1.25rem 1.25rem 0 0;
+        }
+        .dropdown-content {
+            background-color: var(--secondary-color);
+            padding: 0.4rem 0.75rem 0.75rem;
+            border-radius: 0 1.25rem 1.25rem 1.25rem;
+        }
+        > a:hover {
+            border-bottom-color: var(--text-color);
+        }
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    flex-direction: column;
+    gap: 0.25rem;
+    a {
+        display: block;
+    }
+}
+.dropdown:hover .dropdown-content {display: flex;}
+.dropdown:hover a { 
+    background-color: var(--secondary-color); 
+    color: var(--dark-primary-color); 
+}
+header a:hover { color: var(--text-color) !important; }
 
 footer {
     background: var(--dark-primary-color);
