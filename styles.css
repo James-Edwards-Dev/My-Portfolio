@@ -36,7 +36,7 @@ p, a, li{
 }
 a:hover{
     color: var(--highlight-color);
-    transition: color 100ms, border-bottom-color 100ms;
+    transition: color 100ms, border-bottom-color 100ms, background-color 100ms, border-radius 100ms;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,7 +158,7 @@ header {
         gap: 1rem;
         > a, > div > a {
             border-bottom: 1px solid var(--secondary-color);
-            padding: 0.5rem 0.75rem 0.25rem;
+            padding: 0.5rem 0.75rem;
             border-radius: 1.25rem 1.25rem 0 0;
         }
         .dropdown-content {
@@ -167,7 +167,9 @@ header {
             border-radius: 0 1.25rem 1.25rem 1.25rem;
         }
         > a:hover {
-            border-bottom-color: var(--text-color);
+            border-bottom-color: transparent;
+            background-color: var(--secondary-color);
+            border-radius: 1.25rem;
         }
     }
 }
