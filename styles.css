@@ -136,13 +136,14 @@ header {
     top: 0;
     
     min-width: 100vw;
-    padding: 0.75rem 0 0.9rem;
+    padding: 0.15rem 0 0.05rem;
 
     background-color: var(--dark-primary-color);
     border-bottom: 2px solid var(--secondary-color);
 
     > section {
         display: flex;
+        height: 100%;
         justify-content: space-between;
     }
     a {
@@ -151,10 +152,16 @@ header {
         text-decoration: none;
         color: var(--secondary-color);
     }
+    >section>a {
+        font-size: 2.4rem;
+        font-family: "Winky Sans", sans-serif;
+        font-weight: 800;
+    }
     nav {
+        margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         > a, > div > a {
             border-bottom: 1px solid var(--secondary-color);
             padding: 0.5rem 0.75rem;
