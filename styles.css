@@ -197,7 +197,7 @@ header {
     background-color: var(--secondary-color); 
     color: var(--dark-primary-color); 
 }
-header a:hover { color: var(--text-color) !important; }
+header nav a:hover { color: var(--text-color) !important; }
 
 footer {
     background: var(--dark-primary-color);
