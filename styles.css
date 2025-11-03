@@ -3,6 +3,8 @@
     --light-primary-color: #3f3654;
     --dark-primary-color: #09070e;
     --secondary-color: #dd1f42;
+    --light-secondary-color: #f85275;
+    --dark-secondary-color: #4e0b17;
     --text-color: #fff;
     --highlight-color: var(--secondary-color);
             /*#23dcf3;*/
@@ -115,7 +117,7 @@ li::marker {
     border-radius: 4rem;
     border-color: var(--dark-primary-color);
     color: var(--dark-primary-color);
-    transition: transform 200ms, background-color 800ms;
+    transition: transform 200ms, background-color 200ms;
     margin: auto;
 }
 
@@ -131,12 +133,32 @@ li::marker {
     color: var(--secondary-color);
 }
 
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    a, > div {
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        text-decoration: none;
+        margin: 0 0 1rem;
+    }
+    a:hover, a:focus{
+        text-decoration: underline;
+    }
+}
+
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
     
     min-width: 100vw;
-    padding: 0.15rem 0 0.05rem;
+    min-height: 55px;
+    padding: 10px 0 1px;
 
     background-color: var(--dark-primary-color);
     border-bottom: 2px solid var(--secondary-color);
@@ -280,6 +302,57 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+#hero {
+    position: relative;
+    height: max(calc(100svh - 77px));
+    min-height: 420px;
+    width: 100vw;
+    max-width: none;
+    padding: 0;
+    margin: 0 0 5rem;
+
+    border-bottom: 2px solid var(--dark-primary-color);
+    border-top: 0.4rem solid var(--dark-primary-color);
+    background: #09070e repeating-linear-gradient(-45deg, #16131e, #16131e 2rem, #09070e 2rem, #09070e 100px);
+    
+    section {
+        height: calc(100% - 3rem);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 1rem;
+        padding: 1rem 2rem 2rem;
+    }
+
+    article, .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0.5rem 1rem 1rem;
+        border-radius: 1rem;
+        border: 0.2rem solid var(--primary-color);
+        max-width: 100%;
+        width: fit-content;
+        height: fit-content;
+        
+        background-color:  var(--dark-primary-color);
+        p {
+            text-align: center;
+            width: fit-content;
+            text-wrap: pretty;
+            
+        }
+        h1 {            
+            text-align: center;
+            width: fit-content;
+        }
+    }
+}
+/*#hero + section { border-top: 0; }*/
 
 .project-intro{
     display: flex;
