@@ -136,9 +136,8 @@ header {
     top: 0;
     
     min-width: 100vw;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    
+    padding: 0.75rem 0 0.9rem;
+
     background-color: var(--dark-primary-color);
     border-bottom: 2px solid var(--secondary-color);
 
