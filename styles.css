@@ -72,6 +72,16 @@ li::marker {
     color: var(--text-color);
 }
 
+iframe {
+    display: block;
+    border: 2px solid var(--text-color);
+    aspect-ratio: 16 / 9;
+    width: calc(100% - 4px);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
 .description {
     font-size: 1rem;
     font-family: "Winky Sans", sans-serif;
@@ -296,9 +306,11 @@ footer {
 
 .multisection {
     section:not(:last-child) {
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
+        
     }
     section:last-child {
+        border-top: 2px dashed  var(--text-color);
         margin-bottom: 2rem;
     }
 }
@@ -377,6 +389,15 @@ footer {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+}
+
+.project {
+    h4 {
+        margin-top: 0.75rem;
+    }
+    h4:has(+ iframe) {
+        text-align: center;
+    }
 }
 
 #Aced_Class_Table{
