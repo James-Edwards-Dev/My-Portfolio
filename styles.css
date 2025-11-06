@@ -79,7 +79,7 @@ li::marker {
     color: var(--text-color);
 }
 
-iframe {
+.yt {
     display: block;
     border: 2px solid var(--text-color);
     aspect-ratio: 16 / 9;
