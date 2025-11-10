@@ -402,13 +402,16 @@ footer {
     h4 {
         margin-top: 0.75rem;
     }
-    h4:has(+ iframe) {
+    h4:has(+ .yt) {
         text-align: center;
+        border-top: 1px solid var(--text-color);
+        padding-top: 0.5rem;
+        margin-bottom: 0.6rem;
     }
 }
 
 #Aced_Class_Table{
-    border-top: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--text-color);
     /*border-bottom: 1px solid var(--secondary-color);*/
     column-gap: 3vw;
     width: 100%;
@@ -430,6 +433,7 @@ footer {
 }
 
 #Noise-Sum{
+    margin-bottom: 1.5rem;
     display: grid;
     grid-template-columns: 1fr auto 1fr auto 1.25fr;
     gap: 1rem;
