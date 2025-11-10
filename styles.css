@@ -387,6 +387,7 @@ footer {
         border: 2px solid var(--text-color);
     }
     > div {
+        flex-grow: 1;
         height: 100%;
     }
 }
