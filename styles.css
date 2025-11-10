@@ -400,17 +400,20 @@ footer {
 
 .project {
     h4 {
-        margin-top: 0.75rem;
+        border-top: 1px solid var(--text-color);
+        padding-top: 0.5rem;
+        margin-top: 1.75rem;
     }
     h4:has(+ .yt) {
         text-align: center;
-        border-top: 1px solid var(--text-color);
-        padding-top: 0.5rem;
+        /*padding-top: 0.5rem;*/
         margin-bottom: 0.6rem;
     }
 }
 
 #Aced_Class_Table{
+    margin-top: 1.25rem;
+    padding-top: 0.25rem;
     border-top: 1px solid var(--text-color);
     /*border-bottom: 1px solid var(--secondary-color);*/
     column-gap: 3vw;
