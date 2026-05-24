@@ -373,6 +373,53 @@ footer {
 }
 /*#hero + section { border-top: 0; }*/
 
+.job-info {
+    margin: 1.5rem auto;
+    
+    .job {
+        margin-bottom: 1.5rem;
+        border-radius: 1.5rem;
+        padding: 0.75rem 1.25rem;
+        background-color: var(--dark-primary-color);
+        
+        > *, > div > * {
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        * {
+            margin: 0;
+            color: var(--text-color);
+            font-family: "Inter", sans-serif;
+        }
+        p {
+            font-style: italic;
+        }
+    }
+    .job-details {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        > * {
+            flex-grow: 1;
+        }
+
+        img {
+            width: 225px;
+            border-radius: 1rem;
+            object-fit: contain;
+            flex-grow: 2;
+        }
+    }
+}
+
+
 .project-intro{
     display: flex;
     align-items: flex-start;
