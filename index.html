@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>James Edwards</h1>
+            <img src="img/James_Grad_Photo.jpeg" alt="Profile Picture">
+            <nav>
+                <a href=""><img src="icons/github-white.svg" alt="Github"></a>
+                <a href=""><img src="icons/linkedin-white.svg" alt="LinkedIn"></a>
+                <a href=""><img src="icons/email-8-svgrepo-com.svg" alt="Email"></a>
+                <a href=""><img src="icons/cv-file-interface-symbol-svgrepo-com.svg" alt="CV"></a>
+            </nav>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sequi tempora vel veniam? Amet, blanditiis commodi corporis ducimus, eos excepturi inventore laudantium nam porro qui, similique temporibus veniam! Ea, maiores!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <button>Projects</button>
+            <button>Career</button>
+            <button>Education</button>
+            <button>Skills</button>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <h3>Procedural Skier</h3>
+                <iframe src="https://www.youtube.com/embed/MYGl6khnQ7Q?autoplay=1&mute=1&loop=1&playlist=MYGl6khnQ7Q&controls=0&rel=0"></iframe>
+                <p>Procedural Skier is a 3rd person skiing game that makes use of procedural terrain generation. I developed this project for my final year undergraduate dissertation project titled 'The Development of a Video Game using Procedural Terrain Generation'. This project and dissertation archived a total mark of 76%!</p> 
+                <p>I chose to focus on procedural terrain generation, as I enjoyed learning about the noise algorithms that can be used to create terrain height maps.</p>
+                <p>My approach to creating the terrain in was to generate two terrain height maps; Fractile Perlin noise (Multiple Perlin noise maps with decreasing amplitude & increasing frequency) & Worley noise (a noise algorithm that places random points on the heightmap and calculates each coordinate's value based on its distance from the nearest point), and sum these two terrain maps together.</p>
+                <div>
+                    <img src="img/procedural-sk/Fractal-Perlin-Noise.png" alt="Fractal Perlin Noise">
+                    <p>+</p>
+                    <img src="img/procedural-sk/Worley-Noise.png" alt="Worley Noise">
+                    <p>=</p>
+                    <img src="img/procedural-sk/Combined-Noise.png" alt="Combined Noise">
+                </div> 
+                <p>As shown in the diagram above, the fractal Perlin noise creates hilly terrain with lots of bumps and the Worley noise creates smooth ridges. When summed together it creates terrain mountainous that has hilly bumps from the Perlin noise, as well as the ridges from the Worley noise.</p>
+                <p>For more details on this project you can <a href="">view the projects GitHub repository</a> or <a href="">read a copy of the dissertation I wrote about this project</a></p>
+            </div>
+            <div>
+                <h3>Prototype Runner</h3>
+                <iframe src="https://www.youtube.com/embed/kJnejZJc2G8?autoplay=1&mute=1&loop=1&playlist=kJnejZJc2G8&controls=0&rel=0"></iframe>
+                <p>Prototype Runner is a single player movement shooter inspired by games such as Titanfall and Karlson. I created this project during the second year of my undergraduate degree for a module named 'Games Engines'. This project archived a mark of 91% which contributed to me achieving a grade of 85% for this module.</p>
+                <p>During this project I wanted to focus on character movement, so I developed multiple extra movement features for the player such as walling running and sliding using a ridge body character controller.</p>
+                <p>I also created a simple enemy AI system where enemy's could either stand in place or patrol between locations until they gain line of sight with the player. Then the enemy's either shoot at the player or chase them when they don't have line of sight.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>Software Academy UK</h3>
+            <p>Dec 2025 - Present</p>
+            <h4>Software Development Tutor</h4>
+            <p>Remote</p>
+            <ul>
+                <li>Taught students aged 8-16 Unreal Engine 5 and Python, helping students develop their programming and game development skills through practical projects.</li>
+                <li>Developed additional gameplay features for course projects beyond the core curriculum to extend students’ understanding of programming and game development.</li>
+                <li>Provided one-to-one support to students, helping them troubleshoot issues and further understand programming concepts.</li>
+                <li>Provided termly reports for students, communicating their progress, strengths and areas for improvement to support their continued development.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>University of Warwick</h3>
+            <p>Sep 2026 - Sep 2027</p>
+            <h4>Masters of Science in Games Engineering</h4>
+            <img src="" alt="The University of Warwick's logo">
+            <p>I have recently started a Masters of Science in Games Engineering at the University of Warwick. This degree primarily focus's on the technical aspects of games engineering such as low level C++ programming and graphics programming.</p>
+        </div>
+        <div>
+            <h3>Edge Hill University</h3>
+            <p>Sep 2020 - Jul 2022</p>
+            <h4>Bachelor of Science in Computing (Games Programming)</h4>
+            <img src="img/Edge_Hill_University_Crest.png" alt="Edge Hill University's logo">
+            <p>I completed my undergraduate degree at Edge Hill University with a first class honours. For my final year dissertation titled 'The Development of a Video Game using Procedural Terrain Generation', I created a skiing game that included procedurally generated terrain. This terrain was generated by creating multiple height maps using 2d noise algorithms and summing them together.</p>
+        </div>
+    </section>
+    <section>
+        <h3>Programming Languages</h3>
+        <div><img src="icons/cplusplus-original.svg" alt="">C++</div>
+        <div><img src="icons/python-original.svg" alt="">Python</div>
+        <h3>Games Engine</h3>
+        <div><img src="icons/unrealengine-white.svg" alt="">Unreal Engine</div>
+        <h3>Version Control</h3>
+        <div><img src="icons/github-white.svg" alt="">GitHub</div>
+        <div><img src="icons/git-original.svg" alt="">Git</div>
+        <h3>Other</h3>
+        <div><img src="icons/latex-original.svg" alt="">LaTex</div>
+        <div><img src="icons/notion-original.svg" alt="">Notion</div>
+        <h3>Additionally, I have Some experience with</h3>
+        <div><img src="icons/unity-white.svg" alt="">Unity</div>
+        <div><img src="icons/csharp-original.svg" alt=""></div>
+        <div><img src="icons/pygame-logo.png" alt="">Pygame</div>
+        <div><img src="icons/pandas-original.svg" alt="">Pandas</div>
+    </section>
+</body>
+</html>
