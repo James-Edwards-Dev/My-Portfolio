@@ -11,12 +11,22 @@ body {
 
 p, a, li {
     font-size: 1.1rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 section {
     max-width: 900px;
     width: 90vw;
-    margin: auto;
+    margin: 2rem auto;
+    padding-top: 2rem;
+}
+
+section:not(:first-child) {
+    border-top: white solid 2px;
 }
 
 .hero {
