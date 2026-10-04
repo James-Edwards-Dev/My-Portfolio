@@ -134,7 +134,7 @@ section:not(:first-child) {
     background: white;
 }
 
-.project-skills ul {
+.skill-box ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -156,6 +156,15 @@ section:not(:first-child) {
     img {
         width: 2rem;
         margin-right: 0.2rem;
+    }
+}
+.skill-box.large ul {
+    li {
+        font-size: 1.4rem;
+        height: auto;
+    }
+    img {
+        width: 3.5rem;
     }
 }
 
