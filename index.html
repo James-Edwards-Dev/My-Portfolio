@@ -32,29 +32,48 @@
         </div>
     </section>
     <section>
-        <div>
-            <div>
+        <div class="projects-wrapper">
+            <div class="project">
                 <h3>Procedural Skier</h3>
                 <iframe src="https://www.youtube.com/embed/MYGl6khnQ7Q?autoplay=1&mute=1&loop=1&playlist=MYGl6khnQ7Q&controls=0&rel=0"></iframe>
-                <p>Procedural Skier is a 3rd person skiing game that makes use of procedural terrain generation. I developed this project for my final year undergraduate dissertation project titled 'The Development of a Video Game using Procedural Terrain Generation'. This project and dissertation archived a total mark of 76%!</p> 
+                <div class="project-skills">
+                    <ul>
+                        <li><img src="icons/cplusplus-black.svg" alt="">C++</li>
+                        <li><img src="icons/unrealengine-original.svg" alt="">Unreal Engine</li>
+                    </ul>
+                </div>
+                <p class="intro-text">Procedural Skier is a 3rd person skiing game that I developed for my final year undergraduate dissertation project, which focused on Procedural Terrain Generation. <br><br> This project and dissertation archived a total mark of 76%!</p> 
                 <p>I chose to focus on procedural terrain generation, as I enjoyed learning about the noise algorithms that can be used to create terrain height maps.</p>
-                <p>My approach to creating the terrain in was to generate two terrain height maps; Fractile Perlin noise (Multiple Perlin noise maps with decreasing amplitude & increasing frequency) & Worley noise (a noise algorithm that places random points on the heightmap and calculates each coordinate's value based on its distance from the nearest point), and sum these two terrain maps together.</p>
-                <div>
-                    <img src="img/procedural-sk/Fractal-Perlin-Noise.png" alt="Fractal Perlin Noise">
-                    <p>+</p>
-                    <img src="img/procedural-sk/Worley-Noise.png" alt="Worley Noise">
-                    <p>=</p>
-                    <img src="img/procedural-sk/Combined-Noise.png" alt="Combined Noise">
-                </div> 
-                <p>As shown in the diagram above, the fractal Perlin noise creates hilly terrain with lots of bumps and the Worley noise creates smooth ridges. When summed together it creates terrain mountainous that has hilly bumps from the Perlin noise, as well as the ridges from the Worley noise.</p>
+                <p>My approach to creating the terrain in was to generate two terrain height maps and sum these two terrain maps together. The noise algorithm I used for these height maps where;</p>
+                <ul>
+                    <li>Fractile Perlin noise (Multiple Perlin noise maps with decreasing amplitude & increasing frequency)</li>
+                    <li>Worley noise (a noise algorithm that places random points on the heightmap and calculates each coordinate's value based on its distance from the nearest point)</li>
+                </ul>
+                <h4>Fractal Perlin Noise</h4>
+                <img src="img/procedural-sk/Fractal-Perlin-Noise.png" alt="">
+                <h4>Worley Noise</h4>
+                <img src="img/procedural-sk/Worley-Noise.png" alt="">
+                <h4>Combined Noise</h4>
+                <img src="img/procedural-sk/Combined-Noise.png" alt="">
+                
+                <p>The fractal Perlin noise creates hilly terrain with lots of bumps and the Worley noise creates smooth ridges. When summed together it creates terrain mountainous that has hilly bumps from the Perlin noise, as well as the ridges from the Worley noise.</p>
                 <p>For more details on this project you can <a href="">view the projects GitHub repository</a> or <a href="">read a copy of the dissertation I wrote about this project</a></p>
             </div>
-            <div>
+            <div class="project">
                 <h3>Prototype Runner</h3>
                 <iframe src="https://www.youtube.com/embed/kJnejZJc2G8?autoplay=1&mute=1&loop=1&playlist=kJnejZJc2G8&controls=0&rel=0"></iframe>
-                <p>Prototype Runner is a single player movement shooter inspired by games such as Titanfall and Karlson. I created this project during the second year of my undergraduate degree for a module named 'Games Engines'. This project archived a mark of 91% which contributed to me achieving a grade of 85% for this module.</p>
-                <p>During this project I wanted to focus on character movement, so I developed multiple extra movement features for the player such as walling running and sliding using a ridge body character controller.</p>
+                <div class="project-skills">
+                    <ul>
+                        <li><img src="icons/csharp-black.svg" alt="">C#</li>
+                        <li><img src="icons/unity-plain.svg" alt="">Unity</li>
+                    </ul>
+                </div>
+                <p class="intro-text">Prototype Runner is a single player movement shooter inspired by games such as Titanfall and Karlson. I created this project during the second year of my undergraduate degree for a module named 'Games Engines'. This project archived a mark of 91% which contributed to me achieving a grade of 85% for this module.</p>
+                <p>During this project I wanted to focus on character movement, so I developed multiple extra movement features for the player such as walling running and sliding using a ridge body character controller. I also created jump and boost pads that impact how the player moves and could be used when designing levels.</p>
+                <img src="img/pr_jump_pad.png" alt="">
                 <p>I also created a simple enemy AI system where enemy's could either stand in place or patrol between locations until they gain line of sight with the player. Then the enemy's either shoot at the player or chase them when they don't have line of sight.</p>
+                <img src="img/Prototype_Runner_Icon.png" alt="">
+                <p>For more details on this project you can <a href="">view the projects GitHub repository</a>
             </div>
         </div>
     </section>
