@@ -15,6 +15,10 @@ p, a, li, button{
     font-size: 1.05rem;
 }
 
+li {
+    margin-bottom: 0.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -162,3 +166,39 @@ section:not(:first-child) {
     border-bottom: solid 2px white;
 }
 
+.experience:not(:last-child) {
+    border-bottom: solid 2px white;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experience li {
+    font-size: 1.1rem;
+}
+
+.experience-intro{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 0.2rem;
+    p{
+        margin-left: auto;
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    img {
+        height: 20vw;
+        max-height: 12rem;
+    }
+    p{
+        font-size: 1.2rem;
+    };
+}
