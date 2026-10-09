@@ -1,6 +1,9 @@
 let  prev_active_section_button= "btn_projects";
 
 function show_only_this_section(button_name) {
+    if (prev_active_section_button === button_name){
+        return;
+    }
     if (prev_active_section_button !== "null"){
         document.getElementById(prev_active_section_button).classList.remove("active");
     }
