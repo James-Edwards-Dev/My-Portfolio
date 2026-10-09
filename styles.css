@@ -39,7 +39,7 @@ h3 {
 }
 
 button {
-    background: transparent;
+    background: var(--c2);
     font-size: 1.1rem;
     padding: 1rem 1rem;
     border: solid 1px white;
@@ -54,8 +54,8 @@ button:hover {
 }
 
 button.active {
-    color: var(--c1);
-    border-color: var(--c1);
+    color: #852aff;
+    border-color: #852aff;
 }
 
 section {
