@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5rem 0;
+}
+
+p, li, a {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li {
+    margin-left: 2.25rem;
+}
+
+ul.no-list li {
+    margin: 0;
+}
+
+section {
+    margin: auto;
+    width: 75vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon {
+    aspect-ratio: 1 / 1;
+    height: 2rem;
+}
+
+.section-divider {
+    width: 100%;
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1.5rem 0;
+    
+    p {
+        font-size: 0.8rem;
+    };
+}
+
+.hero {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-img img {
+    width: min(30vh, 25vw);
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.projects-section {
+    /*max-width: 1100px;*/ /*TODO uncomment when a 3rd project is added*/ 
+    max-width: 800px;
+    display: grid;
+    gap: 1rem;
+    /* TODO change to 3 1fr's when another project is added*/
+    grid-template-columns: 1fr 1fr;
+}
+
+.project {
+    padding: 0.75rem;
+    p, h4{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    li {
+        margin-bottom: 0.5rem;
+    }
+    .skill-tags {
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.2rem;
+    li {
+        padding: 0.1rem 0.4rem;
+        font-size: 0.9rem;
+    }
+    .title {
+        font-size: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.experience:not(:first-child) {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.experience-heading {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    p {margin-left: auto;}
+}
+.experience-main {
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experience-img img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: min(30vh, 25vw);
+}
+
+.experience-content {
+    width: 60%;
+    flex-grow: 1;
+    li {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .skill-tags {
+        margin-bottom: 1rem;
+    }
+}

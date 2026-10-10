@@ -1,165 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Hello -->
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
     <title>James Edwards - Portfolio</title>
 </head>
 <body>
-    <section>
-        <div class="hero">
-            <div class="hero-nav">
-                <img src="img/James_Grad_Photo.jpeg" alt="Profile Picture">
-                <nav>
-                    <a href=""><img src="icons/email-8-svgrepo-com.svg" alt="Email"></a>
-                    <a href=""><img src="icons/github-white.svg" alt="Github"></a>
-                    <a href=""><img src="icons/linkedin-white.svg" alt="LinkedIn"></a>
-                    <a href=""><img src="icons/cv-file-interface-symbol-svgrepo-com.svg" alt="CV"></a>
-                </nav>
-            </div>
-            <div class="hero-text">
-                <h1>James Edwards</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sequi tempora vel veniam? Amet, blanditiis commodi corporis ducimus, eos excepturi inventore laudantium nam porro qui, similique temporibus veniam! Ea, maiores!</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div id="section-selector">
-            <button id="btn_projects" class="active" onclick="show_only_this_section('btn_projects')">Projects</button>
-            <button id="btn_career" onclick="show_only_this_section('btn_career')">Career</button>
-            <button id="btn_education" onclick="show_only_this_section('btn_education')">Education</button>
-            <button id="btn_skills" onclick="show_only_this_section('btn_skills')">Skills</button>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="projects-wrapper">
-            <div class="project">
-                <h3>Procedural Skier</h3>
-                <iframe src="https://www.youtube.com/embed/MYGl6khnQ7Q?autoplay=1&mute=1&loop=1&playlist=MYGl6khnQ7Q&controls=0&rel=0"></iframe>
-                <div class="skill-box">
-                    <ul>
-                        <li><img src="icons/cplusplus-black.svg" alt="">C++</li>
-                        <li><img src="icons/unrealengine-original.svg" alt="">Unreal Engine</li>
-                    </ul>
-                </div>
-                <p class="intro-text">Procedural Skier is a 3rd person skiing game that I developed for my final year undergraduate dissertation project, which focused on Procedural Terrain Generation. <br><br> This project and dissertation archived a total mark of 76%!</p> 
-                <p>I chose to focus on procedural terrain generation, as I enjoyed learning about the noise algorithms that can be used to create terrain height maps.</p>
-                <p>My approach to creating the terrain in was to generate two terrain height maps and sum these two terrain maps together. The noise algorithm I used for these height maps where;</p>
-                <ul>
-                    <li>Fractile Perlin noise (Multiple Perlin noise maps with decreasing amplitude & increasing frequency)</li>
-                    <li>Worley noise (a noise algorithm that places random points on the heightmap and calculates each coordinate's value based on its distance from the nearest point)</li>
-                </ul>
-                <h4>Fractal Perlin Noise</h4>
-                <img src="img/procedural-sk/Fractal-Perlin-Noise.png" alt="">
-                <h4>Worley Noise</h4>
-                <img src="img/procedural-sk/Worley-Noise.png" alt="">
-                <h4>Combined Noise</h4>
-                <img src="img/procedural-sk/Combined-Noise.png" alt="">
-                
-                <p>The fractal Perlin noise creates hilly terrain with lots of bumps and the Worley noise creates smooth ridges. When summed together it creates terrain mountainous that has hilly bumps from the Perlin noise, as well as the ridges from the Worley noise.</p>
-                <p>For more details on this project you can <a href="">view the projects GitHub repository</a> or <a href="">read a copy of the dissertation I wrote about this project</a></p>
-            </div>
-            <div class="project">
-                <h3>Prototype Runner</h3>
-                <iframe src="https://www.youtube.com/embed/kJnejZJc2G8?autoplay=1&mute=1&loop=1&playlist=kJnejZJc2G8&controls=0&rel=0"></iframe>
-                <div class="skill-box">
-                    <ul>
-                        <li><img src="icons/csharp-black.svg" alt="">C#</li>
-                        <li><img src="icons/unity-plain.svg" alt="">Unity</li>
-                    </ul>
-                </div>
-                <p class="intro-text">Prototype Runner is a single player movement shooter inspired by games such as Titanfall and Karlson. I created this project during the second year of my undergraduate degree for a module named 'Games Engines'. This project archived a mark of 91% which contributed to me achieving a grade of 85% for this module.</p>
-                <p>During this project I wanted to focus on character movement, so I developed multiple extra movement features for the player such as walling running and sliding using a ridge body character controller. I also created jump and boost pads that impact how the player moves and could be used when designing levels.</p>
-                <img src="img/pr_jump_pad.png" alt="">
-                <p>I also created a simple enemy AI system where enemy's could either stand in place or patrol between locations until they gain line of sight with the player. Then the enemy's either shoot at the player or chase them when they don't have line of sight.</p>
-                <img src="img/Prototype_Runner_Icon.png" alt="">
-                <p>For more details on this project you can <a href="">view the projects GitHub repository</a>
-            </div>
-        </div>
-    </section>
-    <section id="career" class="disabled">
-        <div class="experience">
-            <div class="experience-intro">
-                <h3>Software Academy UK</h3>
-                <p>Dec 2025 - Present</p>
-                <h4>Software Development Tutor</h4>
-                <p>Remote</p>
-            </div>
-            <ul>
-                <li>Taught students aged 8-16 Unreal Engine 5 and Python, helping students develop their programming and game development skills through practical projects.</li>
-                <li>Developed additional gameplay features for course projects beyond the core curriculum to extend students’ understanding of programming and game development.</li>
-                <li>Provided one-to-one support to students, helping them troubleshoot issues and further understand programming concepts.</li>
-                <li>Provided termly reports for students, communicating their progress, strengths and areas for improvement to support their continued development.</li>
+    
+    <section class="hero">
+        <div class="hero-img">
+            <img src="img/James_Grad_Photo.jpeg" alt="">
+            <ul class="hero-nav no-list">
+                <li class="icon"><a href="mailto:jamesedwards04@gmail.com" target="_blank"><img src="icons/email-8-svgrepo-com.svg" alt="Email"></a></li>
+                <li class="icon"><a href="https://github.com/James-Edwards-Dev" target="_blank"><img src="icons/github-white.svg" alt="GitHub"></a></li>
+                <li class="icon"><a href="https://www.linkedin.com/in/james-edwards-dev/" target="_blank"><img src="icons/linkedin-white.svg" alt="Linkin In"></a></li>
+                <li class="icon"><a href="PDFs/James_Edwards_CV.pdf" target="_blank"><img src="icons/cv-file-interface-symbol-svgrepo-com.svg" alt="View my CV"></a></li>
             </ul>
         </div>
-    </section>
-    <section id="education" class="disabled">
-        <div class="experience">
-            <div class="experience-intro">
-                <h3>University of Warwick</h3>
-                <p>Sep 2026 - Sep 2027</p>
-                <h4>Masters of Science in Games Engineering</h4>
-            </div>
-            <div class="experience-content">
-                <img src="img/UoW-Logo.webp" alt="The University of Warwick's logo">
-                <p>I have recently started a Masters of Science in Games Engineering at the University of Warwick. This degree primarily focus's on the technical aspects of games engineering such as low level C++ programming and graphics programming.</p>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="experience-intro">
-                <h3>Edge Hill University</h3>
-                <p>Sep 2020 - Jul 2022</p>
-                <h4>Bachelor of Science in Computing (Games Programming)</h4>
-            </div>
-            <div class="experience-content">
-                <img src="img/EHU_Logo.jpeg" alt="Edge Hill University's logo">
-                <p>I completed my undergraduate degree at Edge Hill University with a first class honours. For my final year dissertation titled 'The Development of a Video Game using Procedural Terrain Generation', I created a skiing game that included procedurally generated terrain. This terrain was generated by creating multiple height maps using 2d noise algorithms and summing them together.</p>
-            </div>
+        <div class="hero-text">
+            <h1>James Edwards</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias amet atque debitis distinctio doloribus ea eius ipsum labore maiores maxime natus, nisi omnis optio placeat porro reiciendis vitae voluptatem.</p>
         </div>
     </section>
-    <section id="skills" class="disabled">
-        <h3>Programming Languages</h3>
-        <div class="skill-box">
+    
+    <div class="section-divider">
+        <h2>Projects</h2>
+        <p>Click on the projects icon to learn more about each project</p> <!--TODO Update text in this part-->
+    </div>
+
+    <section class="projects-section">
+        <div class="project">
+            <div class="project-heading">
+                <h3>Procedural Skier</h3>
+                <a href="https://github.com/James-Edwards-Dev/Procedural_Skier" target="_blank"><img class="icon" src="icons/github-white.svg" alt="View Repo"></a>
+            </div>
+            <span class="project-img"><a href=""><img src="img/procedural-sk/Combined-Noise.png" alt=""></a></span>
+            <ul class="skill-tags no-list">
+                <li class="pink">C++</li>
+                <li class="red">Unreal 5</li>
+                <li class="purple">University</li>
+                <li>Solo</li>
+            </ul>
+            <p>I will say what the project is in this section. The text will be around the same length as this.</p>
+            <h4>Highlights:</h4>
             <ul>
-                <li><img src="icons/cplusplus-original.svg" alt="">C++</li>
-                <li><img src="icons/python-original.svg" alt="">Python</li>
+                <li>Built for my undergraduate dissertation project titled '<a href="">The Development of a Video Game using
+                    Procedural Terrain Generation</a>', achieving a grade of 76%.</li>
+                <li>Procedural height maps created by summing fractal perlin & worley noise. Applied to ULandscape terrain using C++.</li>
+                <li>Physics based character controller.</li>
             </ul>
         </div>
         
-        <h3>Games Engine</h3>
-        <div class="skill-box">
+        <div class="project">
+            <div class="project-heading">
+                <h3>Prototype Runner</h3>
+                <a href="https://github.com/James-Edwards-Dev/Prototype_Runner" target="_blank"><img class="icon" src="icons/github-white.svg" alt="View Repo"></a>
+            </div>
+            <span class="project-img"><a href=""><img src="img/Prototype_Runner_Icon.png" alt=""></a></span>
+            <ul class="skill-tags no-list">
+                <li class="light-blue">C#</li>
+                <li class="dark">Unity</li>
+                <li class="purple">University</li>
+                <li>Solo</li>
+            </ul>
+            <p>I will say what the project is in this section. The text will be around the same length as this.</p>
+            <h4>Highlights:</h4>
             <ul>
-                <li><img src="icons/unrealengine-original.svg" alt="">Unreal Engine</li>
+                <li>Build during the second year of my undergraduate degree for a module titled 'Games Engines'. Achieving a total mark of 85%.</li>
+                <li>Rigid body based character controller, that features wall running and sliding.</li>
+                <li>Enemy AI system.</li>
+                <li>Simple high score saving system.</li>
+                <li>Five levels that slowly introduce new mechanics (Enemies, jump pads & boost pads).</li>
             </ul>
         </div>
-        <h3>Version Control</h3>
-        <div class="skill-box">
-            <ul>
-                <li><img src="icons/github-original.svg" alt="">GitHub</li>
-                <li><img src="icons/git-original.svg" alt="">Git</li>
-            </ul>
-        </div>
-        <h3>Other</h3>
-        <div class="skill-box">
-            <ul>
-            <li><img src="icons/latex-original.svg" alt="">LaTex</li>
-            <li><img src="icons/2023_Obsidian_logo.svg.webp" alt="">Obsidian</li>
-            <li><img src="icons/notion-original.svg" alt="">Notion</li>
-            </ul>
-        </div>
-<!--        <h3>Additionally, I have some experience with:</h3>-->
-<!--        <div class="skill-box">-->
-<!--            <ul>-->
-<!--                <li><img src="icons/unity-plain.svg" alt="">Unity</li>-->
-<!--                <li><img src="icons/csharp-original.svg" alt="">C#</li>-->
-<!--                <li><img src="icons/pygame-logo.png" alt="">Pygame</li>-->
-<!--                <li><img src="icons/blender-original.svg" alt="">Blender</li>-->
-<!--                <li><img src="icons/html5-original.svg" alt="">HTML</li>-->
-<!--                <li><img src="icons/css3-original.svg" alt="">CSS</li>-->
-<!--                <li><img src="icons/jira-original.svg" alt="">Jira</li>-->
-<!--            </ul>-->
-<!--        </div>-->
+        
+        
     </section>
+    
+    <div class="section-divider">
+        <h2>Experience</h2>
+    </div>
+
+    <section>
+        <div class="experience">
+            <div class="experience-heading">
+                <h3>Software Development Tutor</h3>
+                <p>Dec 2025 - Present</p>
+                <h4>Software Academy UK</h4>
+                <p>Remote</p>
+            </div>
+            <div class="experience-main">
+                <a class="experience-img" href="https://www.softwareacademy.co.uk/" target="_blank"><img src="img/Software_Academy.png" alt=""></a>
+                <div class="experience-content">
+                    <ul class="skill-tags no-list">
+<!--                        <li class="title">Skills:</li>-->
+                        <li class="red">Unreal 5</li>
+                        <li class="blue">Python</li>
+                        <li>Teaching</li>
+                    </ul>
+                    <ul>
+                        <li>Taught students aged 6-16 Unreal Engine and Python, helping students develop their programming and game development skills through practical projects.</li>
+                        <li>Developed additional gameplay features for course projects beyond the core curriculum to extend students’ understanding of programming and game development.</li>
+                        <li>Provided one-to-one support to students, helping them troubleshoot issues and further understand programming concepts.</li>
+                        <li>Provided termly reports for students, communicating their progress, strengths and areas for improvement to support their continued development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider">
+        <h2>Education</h2>
+        <p>Click on institution logos to view my transcript</p>
+    </div>
+
+    <section>
+        <div class="experience">
+            <div class="experience-heading">
+                <h3>MSc Games Engineering</h3>
+                <p>Sep 2026 - Sep 2027</p>
+                <h4>University of Warwick</h4>
+            </div>
+            <div class="experience-main">
+                <span class="experience-img"><img src="img/UoW-Logo.webp" alt=""></span>
+                <div class="experience-content">
+                    <ul class="skill-tags no-list">
+<!--                        <li class="title">Skills:</li>-->
+                        <li class="pink">C++</li>
+<!--                        <li class="green">DirectX12</li>-->
+<!--                        <li class="red">Unreal 5</li>-->
+<!--                        <li class="blue">Python</li>-->
+                    </ul>
+                    <p>I have recently started a Masters of Science in Games Engineering at the University of Warwick. This degree primarily focus's on the technical aspects of games engineering such as low level C++ programming and graphics programming.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="experience">
+            <div class="experience-heading">
+                <h3>BSc Computing (Games Programming)</h3>
+                <p>Sep 2022 - Jun 2025</p>
+                <h4>Edge Hill University</h4>
+            </div>
+            <div class="experience-main">
+                <a class="experience-img" href="img/Final_Transcript.png" target="_blank"><img src="img/EHU_Logo.jpeg" alt=""></a>
+                <div class="experience-content">
+                    <ul class="skill-tags no-list">
+<!--                        <li class="title">Skills:</li>-->
+                        <li class="pink">C++</li>
+                        <li class="red">Unreal 5</li>
+                        <li class="blue">Python</li>
+                        <li class="light-blue">C#</li>
+                        <li class="dark">Unity</li>
+                    </ul>
+                    <p>I completed my undergraduate degree at Edge Hill University with first class honours. For my final year dissertation titled 'The Development of a Video Game using Procedural Terrain Generation', I created a skiing game that included procedurally generated terrain. This terrain was generated by creating multiple height maps using 2d noise algorithms and summing them together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
